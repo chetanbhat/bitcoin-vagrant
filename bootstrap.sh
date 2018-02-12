@@ -30,7 +30,7 @@ if [ ! -d ~/.bitcoin ]; then
   mkdir /vagrant/data/
   cd /vagrant/data
   # download bootstrap torrent file
-  wget https://bitcoin.org/bin/blockchain/bootstrap.dat.torrent
+  wget https://bitcoin.org/bin/block-chain/bootstrap.dat.torrent
   # fetch snapshot of bitcoin blockchain from BitTorrent network
   transmission-cli bootstrap.dat.torrent -w /vagrant/data
   ln -s /vagrant/data ~/.bitcoin 
